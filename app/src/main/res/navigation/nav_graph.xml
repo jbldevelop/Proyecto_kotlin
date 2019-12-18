@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recetaMainFragment">
+
+    <fragment
+        android:id="@+id/recetaMainFragment"
+        android:name="mx.jbl.ejemplo1.RecetaMainFragment"
+        android:label="fragment_main_receta"
+        tools:layout="@layout/fragment_main_receta" >
+        <action
+            android:id="@+id/action_recetaMainFragment_to_recetaDetalleFragment"
+            app:destination="@id/recetaDetalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recetaDetalleFragment"
+        android:name="mx.jbl.ejemplo1.RecetaDetalleFragment"
+        android:label="fragment_receta_detalle"
+        tools:layout="@layout/fragment_receta_detalle" />
+</navigation>
