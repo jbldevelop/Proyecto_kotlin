@@ -5,5 +5,4 @@ data class Receta(
     val descripcion   : String,
     val imagen_link   : String,
     val recetaDetalle : String
-
 )
